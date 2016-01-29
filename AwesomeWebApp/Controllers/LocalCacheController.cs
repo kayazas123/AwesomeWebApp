@@ -10,6 +10,9 @@ namespace AwesomeWebApp.Controllers
         // GET: CdnDemo
         public ActionResult Index()
         {
+            // static page counter increase every time page is viewed. if the value == 1 the app restared ...
+            MvcApplication._PageHitCountOrDidMyAppJustRestered++;
+
             ViewBag.LocalCacheReady = true;
             ViewBag.LocalCacheFlag = true;
 

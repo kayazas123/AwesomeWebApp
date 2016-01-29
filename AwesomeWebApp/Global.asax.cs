@@ -9,7 +9,7 @@ namespace AwesomeWebApp
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-
+        public static int _PageHitCountOrDidMyAppJustRestered = 0;
         //used to store leaking memory
         public static List<byte[]> _memListLeakGen = new List<byte[]>();
 
