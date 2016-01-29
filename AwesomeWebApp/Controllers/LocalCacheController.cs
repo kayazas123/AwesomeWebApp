@@ -11,10 +11,18 @@ namespace AwesomeWebApp.Controllers
         public ActionResult Index()
         {
             ViewBag.LocalCacheReady = true;
+            ViewBag.LocalCacheFlag = true;
+
+            string LocalCacheFlag = null;
+
+            if ((LocalCacheFlag = WebConfigurationManager.AppSettings["WEBSITE_LOCALCACHE_ENABLED"]) == null)
+            { ViewBag.LocalCacheFlag = false; }
 
             string value = null;
             if((value=System.Environment.GetEnvironmentVariable("WEBSITE_LOCALCACHE_READY")) == null)
             { ViewBag.LocalCacheReady = false; }
+
+            
 
             return View();
         }
