@@ -15,7 +15,7 @@ namespace AwesomeWebApp.Controllers
 
             string LocalCacheFlag = null;
 
-            if ((LocalCacheFlag = WebConfigurationManager.AppSettings["WEBSITE_LOCALCACHE_ENABLED"]) == null)
+            if ((LocalCacheFlag = WebConfigurationManager.AppSettings["WEBSITE_LOCAL_CACHE_OPTION"]) == null)
             { ViewBag.LocalCacheFlag = false; }
 
             string value = null;
