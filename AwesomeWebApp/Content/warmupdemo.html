@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>WARM UP PAGE</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p>This is a placeholder (spalshscreen) page while my app is warming up</p>
+    <p>Please wait . . . </p>
+    <p>testwarmupstring</p>
+    <br /><p>Demo notes</p>
+    <br />
+    make sure you web config includes the applicationInitialization elemet more info http://www.iis.net/configreference/system.webserver/applicationinitialization <br />
+
+    Each time you restart your site, you will see this warm up page and as ../api/InitModuleApiController (default GET) complete its fake warmup. <br /><br />
+
+    To show the warm-up works for swap, scale up, file server failover, UD walk, etc... <br />
+    1. start with one instnace (make sure local cache is turned off; make sure arr cookie is off; make sure always on is off) <br />
+    2. Constently ping the site (use some script) <br />
+    3. add one or more VMs <br /> 
+    4. the wram up screen neven show up... <br />
+    5. to show the warm works, with a single instnace, restart the site. If your pinger works #3 it will catch the warmp up string ...<br />
+    
+    re-warmup on crash        
+</body>
+</html>

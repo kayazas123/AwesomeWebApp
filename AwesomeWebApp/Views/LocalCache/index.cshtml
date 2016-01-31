@@ -5,8 +5,14 @@
 
 <h2>Local Cache Demo</h2>
 
-<p>Local cahce flage set = @ViewBag.LocalCacheFlag; </p>
-<p>Local cahce ready = @ViewBag.LocalCacheReady; </p>
+<p>Local cache flage set = @ViewBag.LocalCacheFlag; </p>
+<p>Local cache ready = @ViewBag.LocalCacheReady; </p>
 <p>Static page views counter (if value ==1 it means app restered) =  @MvcApplication._PageHitCountOrDidMyAppJustRestered</p>
 
-<p>some text here explaning what is local cache </p>
+<p>Demo notes </p>
+<p >Setup app setting WEBSITE_LOCAL_CACHE_OPTION=Always. This will restart the site (as any appsetting change). Once site run local cache will start copy site content from share (UNC) to local VM disk. Once copy is done site will restart but use local disk for content </p>
+<br />
+<p>Why/when you need local cache: TBD </p>
+<p>What is local cache: TBD </p>
+
+
