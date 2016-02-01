@@ -27,6 +27,19 @@ namespace AwesomeWebApp.Controllers
                 //string.Format("thread {0} \t slept for {1} msec",threadID, SleepTime);
                 ViewBag.message = string.Format("thread {0} \t slept for {1} msec", threadID, SleepTime);
             }
+            //return instnace ID
+            else if(task == "1")
+            {
+                string instanceID = null;
+                instanceID = Environment.GetEnvironmentVariable("WEBSITES_INSTANCE_ID") ?? "localhost" + Environment.MachineName;
+
+                ViewBag.message = instanceID;
+            }
+            // crash the app
+            else if(task =="1234")
+            {
+                System.Environment.Exit(0);
+            }
 
             ViewBag.test = "test";
             return View();
