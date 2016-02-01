@@ -31,7 +31,7 @@ namespace AwesomeWebApp.Controllers
             else if(task == "1")
             {
                 string instanceID = null;
-                instanceID = Environment.GetEnvironmentVariable("WEBSITES_INSTANCE_ID") ?? "localhost" + Environment.MachineName;
+                instanceID = Environment.GetEnvironmentVariable("WEBSITE_INSTANCE_ID") ?? "localhost -" + Environment.MachineName;
 
                 ViewBag.message = instanceID;
             }
