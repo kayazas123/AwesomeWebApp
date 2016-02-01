@@ -135,6 +135,7 @@
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InitModuleApiController.cs" />
+    <Compile Include="Controllers\InitModuleController.cs" />
     <Compile Include="Controllers\LocalCacheController.cs" />
     <Compile Include="Controllers\PerfIssuesController.cs" />
     <Compile Include="Controllers\StagingSlotsController.cs" />
@@ -190,6 +191,7 @@
     <Content Include="Views\EasyAuth\index.cshtml" />
     <Content Include="Views\StagingSlots\index.cshtml" />
     <Content Include="Views\LocalCache\index.cshtml" />
+    <Content Include="Views\InitModule\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
