@@ -12,7 +12,10 @@
 <p>Demo notes </p>
 <p >Setup app setting WEBSITE_LOCAL_CACHE_OPTION=Always. This will restart the site (as any appsetting change). Once site run local cache will start copy site content from share (UNC) to local VM disk. Once copy is done site will restart but use local disk for content </p>
 <br />
-<p>Why/when you need local cache: TBD </p>
-<p>What is local cache: TBD </p>
+
+The <a href="https://azure.microsoft.com/en-us/documentation/articles/app-service-local-cache/">LocalCache</a> is a copy of the /site and /siteextensions folders of the web app. It is created on the local VM instance on web app startup. The size of the local cache per web app is limited to 300 MB by default, but you can increase it up to 1 GB.<br />
+See a <a href="https://azure.microsoft.com/en-us/documentation/videos/azure-web-apps-introduces-local-cache/">quick video</a> about LocalCache
+
+
 
 
